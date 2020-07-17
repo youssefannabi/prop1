@@ -1,14 +1,18 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import 'bootstrap/dist/css/bootstrap.min.css';
-import{table} from 'react-bootstrap'
+import{Table} from 'react-bootstrap'
 
 
 function ProductTable  (props){
   return  (
     <div >
-      <table>
-      <thead>
+      <Table style={{
+marginTop:'250px'
+      }} >
+      <thead style={{
+        backgroundColor:"grey"
+      }}>
       <tr >
         <td>name </td>
         <td> price </td>
@@ -26,7 +30,7 @@ function ProductTable  (props){
      )}
 
   </tbody>
-  </table>
+  </Table>
   </div>
 
  
